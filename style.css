@@ -1,7 +1,10 @@
 :root {
     --dark-mode-n1: #000;
-    --dark-mode-n2: rgb(20, 20, 20);
-    --text-standart: beige;
+    --dark-text-n1: #000;
+    --dark-mode-n2: #222;
+    --dark-text-n2: #222;
+    --white-mode-n1: beige;
+    --white-text-n1: beige;
     --border-standart: 2px solid beige;
 }
 
@@ -11,18 +14,46 @@ body {
     height: 100vh;
     box-sizing: border-box;
     background-color: var(--dark-mode-n1);
-    color: var(--text-standart);
+    color: var(--white-text-n1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    background-color: var(--dark-mode-n2);
     height: 20%;
-    width: 95%;
-    margin-top: 25px;
-    border: var(--border-standart);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 40%;
+    background-color: var(--white-mode-n1);
+    color: var(--dark-mode-n2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+}
+
+nav a:hover {
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+header div {
+    width: 100%;
+    height: 60%;
+    background-color: var(--dark-mode-n2);
+    color: var(--white-text-n1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,19 +99,37 @@ main {
 
 .data1 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100px;
+    width: 100px;
 }
 
 .imgUser {
-    height: 30%;
-    width: 35%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     border: var(--border-standart);
 }
 
 .data2 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
+.data3 {
+    height: 35px;
+    display: flex;
+}
+
+.data3 a {
+    display: flex;
+    justify-content: center;
+}
+
+.imgContact {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#githubLogo {
+    border-radius: 50%;
+}
