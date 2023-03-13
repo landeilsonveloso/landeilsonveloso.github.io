@@ -54,12 +54,19 @@ main {
     align-items: center;
 }
 
-.myDatas {
+.myData {
     height: 92%;
     width: 87%;
     border-radius: 5%;
     border: var(--border-standart);
     padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +80,27 @@ main {
     border: var(--border-standart);
 }
 
-.infoUser {
+.data2 {
     text-align: center;
+}
+
+.data3 {
+    height: 35px;
+    display: flex;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+.imgContact {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgContact2 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
 }
