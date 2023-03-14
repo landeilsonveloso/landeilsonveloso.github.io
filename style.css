@@ -3,9 +3,9 @@
     --dark-text-n1: #000;
     --dark-mode-n2: #222;
     --dark-text-n2: #222;
-    --white-mode-n1: beige;
-    --white-text-n1: beige;
-    --border-standart: 2px solid beige;
+    --white-mode-n1: white;
+    --white-text-n1: white;
+    --border-standart: 2px solid white;
 }
 
 body {
@@ -118,6 +118,7 @@ main {
 .data3 {
     height: 35px;
     display: flex;
+    justify-content: space-around;
 }
 
 .data3 a {
