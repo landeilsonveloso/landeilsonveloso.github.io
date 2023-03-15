@@ -22,7 +22,7 @@ body {
 
 nav {
     width: 100%;
-    height: 7.5%;
+    height: 72px;
     background-color: var(--white-mode-n1);
     color: var(--white-text-n1);
     display: flex;
@@ -32,7 +32,7 @@ nav {
 
 header {
     width: 100%;
-    height: 10%;
+    height: 96px;
     background-color: var(--dark-mode-n2);
     color: var(--white-text-n1);
     display: flex;
@@ -51,7 +51,7 @@ nav a:hover {
 
 main {
     width: 100%;
-    height: 82.5%;
+    height: 800px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -59,7 +59,8 @@ main {
 
 .section1 {
     width: 20%;
-    height: 60%;
+    height: 480px;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +69,7 @@ main {
 
 .section2 {
     width: 20%;
-    height: 60%;
+    height: 450px;
     border-radius: 5%;
     background-color: #0c345c;
     display: flex;
@@ -77,8 +78,8 @@ main {
 }
 
 .myData {
-    height: 92%;
-    width: 87%;
+    width: 87.5%;
+    height: 425px;
     border-radius: 5%;
     border: var(--white-border-n1);
     padding: 0px 5px;
@@ -90,7 +91,7 @@ main {
 
 .data1 {
     width: 35%;
-    height: 27.5%;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +110,7 @@ main {
 }
 
 .data3 {
-    height: 7.5%;
+    height: 35px;
     display: flex;
     justify-content: space-around;
 }
