@@ -34,82 +34,137 @@ header {
 main {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-.section1 {
-    width: 20%;
-    height: 480px;
-    font-size: 1.5rem;
+section {
+    width: 33%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1 {
+    flex-direction: column;
+}
+
+#section1 div {
+    width: 70%;
+    height: 500px;
+    font-size: 1.25rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section2 {
-    width: 20%;
-    height: 450px;
+#border_div {
+    width: 70%;
+    height: 500px;
+    background-color: var(--dark-mode-n2);
     border-radius: 5%;
-    background-color: #0c345c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.myData {
-    width: 87.5%;
-    height: 425px;
-    border-radius: 5%;
+#my_datas {
+    width: 90%;
+    height: 470px;
     border: var(--white-border-n1);
-    padding: 0px 5px;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.data1 {
-    width: 35%;
+#img_user_div {
+    width: 100%;
     height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imgUser {
+#img_user_div img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 50%;
     border: var(--white-border-n1);
+    border-radius: 50%;
 }
 
-.data2 {
+#info_div {
     text-align: center;
-    margin-bottom: 10px;
 }
 
-.data3 {
-    height: 35px;
+#links_div {
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.data3 a {
+#links_div a {
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#links_div a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#github_logo {
+    border-radius: 50%;
+}
+
+#section3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imgContact {
-    max-width: 100%;
-    max-height: 100%;
+#other_projects_div {
+    width: 90%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#githubLogo {
-    border-radius: 50%;
+#p_div {
+    width: 70%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p_div p {
+    font-size: 1.50rem;
+    text-align: center;
+    background-color: var(--dark-mode-n2);
+    padding: 20px;
+}
+
+#links_div2 {
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#links_div2 a {
+    color: var(--white-text-n1);
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 footer {
@@ -117,7 +172,90 @@ footer {
     height: 100px;
     background-color: var(--dark-mode-n2);
     color: var(--white-text-n1);
+    font-size: 1.10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1500px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 55%;
+    }
+
+    .section1 div {
+        font-size: 1.50rem;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 70%;
+    }
+
+    .section1 div {
+        font-size: 1.50rem;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 85%;
+    }
+
+    .section1 div {
+        font-size: 1.50rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    .section1 div {
+        font-size: 1.50rem;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 100%;
+    }
 }
