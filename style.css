@@ -3,7 +3,7 @@
     --secondary-backgrond-color: #363636;
     --primary-text-color: #eeeeee;
     --secondary-text-color: #a7a6a6;
-    --standard-border: 2px solid #eeeeee;
+    --standard-border: 1px solid #eeeeee;
 }
 
 body {
@@ -16,14 +16,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 header {
     width: 100%;
-    height: 125px;
+    height: 75px;
+    font-size: 1.5rem;
     background-color: var(--secondary-backgrond-color);
-    color: var(--primary-text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,151 +30,124 @@ header {
 
 main {
     width: 100%;
+    height: calc(100vh - 200px);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-.standard_div {
-    width: 75%;
-    height: 500px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 section {
-    width: 33%;
-    height: 600px;
+    width: 30%;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-#s1_div2 {
+.salutation {
     font-size: 1.5rem;
 }
 
-#s2_div2 {
-    width: 80%;
-    height: 450px;
+.about__me {
+    width: 75%;
+    height: 420px;
     background-color: var(--secondary-backgrond-color);
     border: var(--standard-border);
-    border-radius: 5%;
+    border-radius: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#img_user_div {
-    width: 100%;
-    height: 125px;
+.user__img {
+    width: 30%;
+    height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
-#img_user_div img {
+.user__img img {
     max-width: 100%;
     max-height: 100%;
     border: var(--standard-border);
     border-radius: 50%;
 }
 
-#info_div {
-    text-align: center;
-}
-
-#links_div {
-    width: 100%;
+.user__description {
+    width: 50%;
+    height: 100px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#links_div a {
-    width: 20%;
-    height: 40px;
+.user__contacts {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__contacts a {
+    width: 30%;
+    height: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-#links_div a img {
+.user__contacts a img {
     max-width: 100%;
     max-height: 100%;
 }
 
-#github_logo {
+.user__contact-circule img {
     border-radius: 50%;
 }
 
-#s3_div2 {
-    width: 80%;
-    height: 450px;
+.know__more {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.kmow__more__subtitle {
+    width: 50%;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: var(--secondary-backgrond-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__projects {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user__projects a {
     font-size: 1.25rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#s3_div2 p {
-    padding: 20px;
-    border-radius: 2.5%;
-    background-color: var(--secondary-backgrond-color);
-}
-
-#s3_div2 a {
     color: var(--primary-text-color);
 }
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 75px;
+    font-size: 1.25rem;
     background-color: var(--secondary-backgrond-color);
-    color: var(--primary-text-color);
-    font-size: 1.10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 1600px) {
-    .standard_div {
-        width: 90%;
-    }
-}
-
-@media (max-width: 1200px) {
-    section {
-        width: 50%;
-    }
-
-    .standard_div {
-        width: 90%;
-    }
-}
-
-@media (max-width: 800px) {
-    section {
-        width: 75%;
-    }
-
-    .standard_div {
-        width: 90%;
-    }
-}
-
-@media (max-width: 600px) {
-    section {
-        width: 100%;
-    }
-
-    .standard_div {
-        width: 90%;
-    }
 }
